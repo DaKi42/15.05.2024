@@ -1,0 +1,5 @@
+<div class="products-container">
+    <div *ngFor="let product of products" class="product">
+      <app-card-block [product]="product" (selected)="onSelectProduct($event)"></app-card-block>
+    </div>
+  </div>
